@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>portfolio_of_a_doctor</title>
+</head>
+
+<body>
+    <!-- .............header.................. -->
+    <header class=" sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-div">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <img src="../images/logo2.png" class="logo-img" alt="">
+                    <div class="d-flex flex-column align-items-center justify-content-center logo-text">
+                        <div class="navbar-brand navbar-logo-text" href="#">Dr.Sharika</div>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-all-list" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link navbar-links links active mx-3" aria-current="page"
+                                href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-links links active mx-3" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-links  links active mx-3" href="./service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-links links active mx-3" href="./appointment.html">Appointment</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a href="#appointment"><button class="btn fw-bold px-4 all-btn-contact"
+                                type="submit">Contact</button></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- .....................Appointment......................... -->
+    <section class="py-5" id="appointment" >
+        <div class="container py-4">
+            <h2 class="text-center edu_ex_title pb-5">Appointment</h2>
+            <div class="row">
+                <div class="col-md-6 pb-4">
+                    <div class="app-div p-5">
+                        <p class="app-p fs-4 fw-bold text-center">We Are Here For You</p>
+                        <p class="app-book fs-5 fw-bold text-center">Book Appointment</p>
+                        <form>
+                            <div class="form-group my-3">
+                                <input type="text" class="form-control" id="exampleInputText1"
+                                    aria-describedby="emailHelp" placeholder="Enter Name">
+                            </div>
+                            <div class="form-group my-3">
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-group my-3">
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Enter Email">
+                            </div>
+                            <div class="form-group my-3">
+                                <input type="date" class="form-control" id="exampleFormdate1" placeholder="Select Date">
+                            </div>
+                            <div class="form-group my-3">
+                                <input type="text" class="form-control" id="exampleFormdate1"
+                                    placeholder="Write the time">
+                            </div>
+                            <div class="form-group my-3">
+                                <select class="custom-select custom-select-lg mb-3 w-100 py-2">
+                                    <option selected>Select:Department</option>
+                                    <option value="1">Cardiology</option>
+                                    <option value="2">Diagnostic</option>
+                                    <option value="3">Gynecology</option>
+                                    <option value="2">Nutrition</option>
+                                    <option value="3">Surgery</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn fw-bold px-4 all-btns">Make Appointment</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 pb-4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.84181471552!2d90.38209461498138!3d23.753019684588125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b909699eb439%3A0x49891c37c9b3294c!2sFeather%20IT!5e0!3m2!1sen!2sbd!4v1673067980415!5m2!1sen!2sbd"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- .........never miss an update........... -->
+    <section class="update py-5" data-aos="fade-up">
+        <div class="container">
+            <div class="py-4 text-center">
+                <h2 class="text-center edu_ex_title pb-3">Never miss an update or an exciting offer</h2>
+                <p class="col-sm-10 col-md-10 col-lg-6 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Modi reprehenderit nihil
+                    sequi odio aut voluptatibus doloremque non laboriosam distinctio iste.</p>
+                <div class="input-group mb-3 update-email-div mx-auto">
+                    <input type="text" class="form-control update-email" placeholder="email"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn all-btns subscribe" type="button" id="button-addon2">Subscribe</button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- ...........footer............. -->
+    <section class="footer p-2">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center m-4">
+                    <a class="footer-class-a" aria-current="page" href="#home">Home</a>
+                    <a class="footer-class-a" href="#about">About</a>
+                    <a class="footer-class-a" href="#service">Services</a>
+                </div>
+                <div class="col text-center m-4">
+                    <p class="footer-p">Copyright &#169; by Feather It</p>
+                </div>
+                <div class="col text-center m-4">
+                    <a href="" class="footer-class-a">Privacy & Policy</a>
+                    <a href="" class="footer-class-a">Terms & Condition</a>
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">
+                        <i class="fa-solid fa-arrow-up-from-bracket fw-bold fs-2 px-3 py-3"></i>
+                      </button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/e36ede94fd.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

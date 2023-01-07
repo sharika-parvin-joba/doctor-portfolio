@@ -1,0 +1,746 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --color1:#153462;
+    --color2:#82CD47;
+    --color3:#615f5f;
+    --color4:#fff;
+    --color5:#54B435;
+    --color6:#F1F6F5
+  
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* ....................header....................... */
+.navbar-div{
+    background:var(--color1);
+}
+.navbar-all-list ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.navbar-all-list ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:var(--color2);
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+.navbar-all-list ul li a:hover::after{
+    width: 100%;
+}
+.navbar-links{
+    font-size: 18px;
+}
+.all-btns{
+    background: var(--color2);
+    color: var(--color4);
+    font-size: 25px;
+    border: none;
+    border-radius: 15px;
+}
+.all-btn-contact{
+    background: var(--color2);
+    color: var(--color4);
+    border: none;
+    border-radius: 15px;
+}
+.all-btn-contact:hover{
+    background: var(--color5);
+    transition: 0.6s;
+    color: var(--color4);
+    border: none;
+}
+.all-btns:hover{
+    background: var(--color5);
+    transition: 0.6s;
+    color: var(--color4);
+    border: none;
+}
+.logo-img{
+    height: 62px;
+    width: 75px;
+    margin-left: -20px;
+    position: relative;
+}
+.logo-text{
+     position: absolute;
+    padding-left: 30px;
+    font-family: 'Rubik Vinyl', cursive;
+}
+.navbar-logo-text{
+    color: var(--color4);
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+#appointment{
+    margin-left: 15px;
+    margin-right: 25px;
+}
+
+/*................ home.............. */
+.top-padding{
+    padding-top: 11px;
+}
+.main-text{
+    color: var(--color1);
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+.img-box{
+position: relative;
+}
+
+.home-img{
+    background:var(--color6);
+}
+.home-page-p{
+    position: relative;
+    animation:animate 4s;
+    color: var(--color3);
+    font-size: 20px;
+}
+@keyframes animate{
+    0%   {left:0px; top:0px;}
+    50%  { left:200px; top:0px;}
+    100%  { left:0px; top:0px;}
+}
+.main-text{
+    position: relative;
+    animation:animate-main 4s;
+}
+@keyframes animate-main{
+    0%   {right:0px; top:0px;}
+    50%  { right:80px; top:0px;}
+    100%  { right:0px; top:0px;}
+}
+.home-page-p2{
+    font-size: 15px;
+    color: var(--color3);
+}
+.icons-footer{
+    font-size: 40px;
+    margin-right:35px;
+    color: var(--color1);
+}
+.icons-footer:hover{
+    color:var(--color5) ;
+    transition: 0.6s;
+    transform: scale(1.1)
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:var(--color2);
+    color: white;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background-color:var(--color3);
+  }
+/* ...................about........... */
+.abt-img{
+    text-align: center;
+}
+.abt-img-class{
+    background-color:#fff;
+    border-radius: 15px;
+    box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),
+    25px 35px 20px rgba(0,0,0,0.05),
+    25px 30px 30px rgba(0,0,0,0.05),
+    inset -20px -20px 25px rgba(255,255,255,0.9);
+    animation: move 3s linear infinite;
+}
+@keyframes move{
+    0%{
+        border-radius: 47% 53% 70% 30% / 30% 43% 57% 70%;
+    }
+    100%{
+        border-radius: 30% 70% 53% 47%/70% 57% 43% 30% ;
+    }
+
+}
+.name-text{
+    color: var(--color1);
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+}
+.p-text{
+    font-size: 25px;
+    color: var(--color3);
+}
+
+/* ...........Education And Expereince............ */
+.education_experience{
+    background:var(--color6);
+}
+.edu_ex_title{
+    color: var(--color1);
+    font-family: 'Poppins', sans-serif;
+}
+.edu-card-text{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color3);
+}
+.ex_edu_card{
+    border-radius: 15px;
+    border-top: 1px solid var(--color1);
+    border-bottom: 10px solid var(--color1);
+    border-left: 2px solid var(--color1);
+    border-right: 2px solid var(--color1);
+    transition: 0.6s;
+}
+.ex_edu_card:hover{
+    transform: scale(1.05);
+}
+.card-span{
+    color: #54B435;
+    font-weight: bold;
+}
+.card-btn{
+background-color:var(--color2);
+font-size: 20px;
+border: none;
+border-radius: 10px;
+color: #fff;
+font-weight: bold;
+}
+.card-btn:hover{
+    background-color: var(--color5);
+}
+/*....... Work Experience......... */    
+.work-card {
+    box-sizing: content-box;
+    padding-top: 15px;
+    position: relative;
+    background:var(--color1);
+    color: #7eb4e2;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+ .work-card::after {
+      content: '';
+      position: absolute;
+      left: 6px;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 13px solid #7eb4e2;
+      border-left: 200px solid transparent;
+      border-right: 200px solid transparent;
+}
+.work-card:hover{
+    transition: 0.6s;
+    transform: scale(1.05);
+}
+.medi-name{
+    color: var(--color4);
+    font-size: 18px;
+}
+.card-yr{
+    color: var(--color4);
+}
+.card-p{
+    color: var(--color4);
+    font-size: 12px;
+}
+/* .............Special Facilities................ */
+.spe-fa{
+    background:var(--color6);
+}
+.spe-fa-div{
+    background: #fff;
+    border-radius: 15px;
+    margin:10px;
+}
+.spe-fa-p{
+    margin-bottom: 0rem;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color1);
+}
+.spe-fa-icon{
+    font-size: 35px;
+}
+.sf-btm-p{
+    font-size: 15px;
+    color: var(--color3);
+}
+.spe-fa-div1{
+    border-right: 118px solid var(--color1);
+    transition: border-right 2s,border-left 4s;
+}
+.spe-fa-div1:hover{
+    border-right: 0px;
+    border-left: 118px solid var(--color1);
+    
+}
+.spe-fa-div2{
+    border-left: 118px solid var(--color1);
+    transition: border-right 2s,border-left 4s;
+}
+.spe-fa-div2:hover{
+    border-right:118px solid var(--color1);
+    border-left:0px ;
+}
+/* .................... Services............................ */
+.service-div{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),
+    25px 35px 20px rgba(0,0,0,0.05),
+    25px 30px 30px rgba(0,0,0,0.05),
+    inset -20px -20px 25px rgba(255,255,255,0.9);
+    transition: 0.6s;
+    animation: service 3s;
+    animation: move 3s linear infinite;
+}
+.service-div:hover{
+    border-radius: 50%;
+}
+@keyframes service{
+    0%{
+        border: 0;
+    }
+    100%{
+        
+    }
+}
+.service-p{
+    position: absolute;
+    top: 55px;
+    left: 25px;
+    bottom:0 ;
+    right: 0;
+    color: var(--color1);
+    font-size: 20px;
+    font-weight: bold;
+}
+.service-row{
+    padding-bottom: 40px;
+}
+.service-1{
+    top: 0px;
+}
+.service-2{
+    top: 60px;
+}
+.service-3{
+    top: 60px;
+}
+.service-icon{
+    font-size: 30px;
+    margin: 2px;
+}
+
+/* ............Testimonial.............. */
+.testimonial{
+    background:var(--color6);
+}
+.user-img-div{
+position: relative;
+margin-left: 150px;
+}
+.user-img-div img{
+    border-radius: 10px 10px 300px 100px;
+    width: 50%;
+    
+ }
+.user-text{
+    position: absolute;
+    background-color: var(--color1);
+    color: white;
+    top: 100px;
+    left: 500px;
+    padding: 30px;
+    border-radius: 15px;
+}
+.user-text-p{
+    font-size: 18px;
+}
+.user-h3{
+    font-size: 25px;
+}
+/* .....................Appointment.........................  */
+.app-div{
+    background: var(--color1);
+    border-radius: 10px;
+}
+.app-p{
+    color: #fff;
+}
+.app-book{
+    color: #fff;
+}
+.app-input-class{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.textarea{
+    height: 300px;
+}
+.icons-div{
+    padding: 20px 0px;
+}
+.icons{
+    font-size: 40px;
+    margin: 5px;
+    color: var(--color1);
+}
+/* ..........never miss update.......... */
+.subscribe{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+.update-email-div{
+    width: 600px;
+}
+.update{
+   
+    background:var(--color6);
+    box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),
+    25px 35px 20px rgba(0,0,0,0.05),
+    25px 30px 30px rgba(0,0,0,0.05),
+    inset -20px -20px 25px rgba(255,255,255,0.9);
+}
+.update h2{
+    font-family: 'Poppins', sans-serif;
+}
+.update-email{
+    border-radius: 10px;
+    padding: 15px;
+}
+/* ...............footer................ */
+.footer{
+    background: var(--color1);
+}
+
+.footer-p{
+    color: var(--color4);
+    /* font-size: 12px; */
+}
+.footer-class-a{
+    text-decoration: none;
+    color: var(--color4);
+    padding: 5px;
+}
+.footer-class-a:hover{
+    color: var(--color2);
+}
+.contact-p{
+    color: var(--color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+/* Media Query */
+@media (max-width: 1200px) { 
+    .work-card::after{
+        border-left: 180px solid transparent;
+        border-right: 144px solid transparent;
+    }
+    .user-text{
+        top: 50px;
+        left: 450px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .service-4{
+        display: none;
+    }
+ }
+ @media (max-width: 992px) { 
+    .work-card::after{
+        border-left: 125px solid transparent;
+        border-right: 108px solid transparent;
+    }
+    .service-3{
+        display: none;
+    }
+    .user-text{
+        top: 30px;
+        left: 350px;
+        padding: 10px;
+        border-radius: 15px;
+        width: 300px;
+        height: 125px;
+    }
+    .user-text-p{
+        font-size: 15px;
+    }
+    .user-h3{
+        font-size: 20px;
+    }
+
+ }
+ @media (max-width: 768px) { 
+    .work-card::after{
+        border-left: 190px solid transparent;
+        border-right: 183px solid transparent;
+    }
+    .middle-advice{
+        top: 20px;
+    }
+    .service-3{
+        display: block;
+        top: 50px;
+    }
+    /* .service-1{
+        margin-left: 50px;
+    } */
+    .user-img-div{
+        margin-left: 50px;
+    }
+    .user-img-div img{
+        width: 100%
+
+    }
+    .user-text{
+        top: 180px;
+        left: 200px;
+        padding: 15px;
+        border-radius: 15px;
+    }
+    .user-text-p{
+        font-size: 12px;
+    }
+    .user-h3{
+        font-size: 15px;
+    }
+    .subscribe{
+        font-size: 15px;
+        padding: 5px;
+    }
+    .update-email-div{
+        width: 400px;
+    }
+ }
+@media (max-width: 576px) { 
+    .img-box img{
+        width: 75%;
+    }
+   .main-text {
+    font-size: 45px;
+   }
+   .all-btns{
+    font-size: 21px;
+   }
+   .name-text{
+    font-size: 33px;
+   }
+   .p-text{
+    font-size: 22px;
+   }
+
+
+ }
+ @media (max-width: 540px) { 
+    .work-card::after{
+        border-left: 170px solid transparent;
+        border-right: 170px solid transparent;
+    }
+    .user-text{
+        top: 150px;
+        left: 150px;
+        padding: 15px;
+        border-radius: 15px;
+    }
+ }
+ @media (max-width: 480px) { 
+    .work-card::after{
+        border-left: 140px solid transparent;
+        border-right: 171px solid transparent;
+    }
+    .user-text{
+        top: 130px;
+        left: 80px;
+        padding: 5px;
+        border-radius: 15px;
+        text-align: center;
+    }
+    .user-text-p{
+        font-size: 12px;
+        padding: 0;
+    }
+    .user-h3{
+        font-size: 13px;
+        padding: 0;
+    }
+ }
+ @media (max-width: 450px){
+    .work-card::after{
+        border-left: 140px solid transparent;
+        border-right: 135px solid transparent;
+    }
+    .middle-advice{
+        left: 110px;
+        top: 40px;
+    }
+    .service-1{
+        top: 0px;
+        left: 110px;
+    }
+    .service-2{
+        top: 20px;
+        left: 110px;
+    }
+    .service-3{
+        top: 60px;
+        left: 110px;
+    }
+    .service-4{
+        display: block;
+        left: 72px;
+        top: 70px;
+    }
+    .update-email-div{
+        width: 280px;
+    }
+    .subscribe{
+        font-size: 15px;
+    }
+   
+ }
+
+ @media (max-width: 430px){
+    .middle-advice{
+        left: 100px;
+        top: 40px;
+    }
+    .service-1{
+        top: 0px;
+        left: 100px;
+    }
+    .service-2{
+        top: 20px;
+        left: 100px;
+    }
+    .service-3{
+        top: 60px;
+        left: 100px;
+    }
+    .user-text{
+        top: 120px;
+        left: 60px;
+        padding: 5px;
+        border-radius: 15px;
+        text-align: center;
+        opacity: 0.6;
+    }
+    .user-text-p{
+        font-size: 12px;
+    }
+    .user-h3{
+        font-size: 13px;
+    }
+ }
+ @media (max-width: 400px) { 
+    .navbar-logo-text {
+       font-size: 25px;
+        margin-left: 15px;
+    }
+    .work-card::after{
+        border-left: 120px solid transparent;
+        border-right: 110px solid transparent;
+    }
+    .middle-advice{
+        left: 90px;
+        top: 40px;
+    }
+    .service-1{
+        top: 0px;
+        left: 90px;
+    }
+    .service-2{
+        top: 20px;
+        left: 90px;
+    }
+    .service-3{
+        top: 60px;
+        left: 90px;
+    }
+    .user-text{
+        top: 100px;
+        left: 40px;
+        padding: 5px;
+        border-radius: 15px;
+       text-align: center;
+        opacity: 0.6;
+    }
+    .user-text-p{
+        margin-bottom: 0rem;
+        font-size: 12px;
+    }
+    .user-h3{
+        font-size: 12px;
+    }
+ }
+ @media (max-width: 350px){
+    .middle-advice{
+        left: 70px;
+        top: 40px;
+    }
+    .service-1{
+        top: 0px;
+        left: 70px;
+    }
+    .service-2{
+        top: 20px;
+        left: 70px;
+    }
+    .service-3{
+        top: 60px;
+        left: 70px;
+    }
+    .user-text{
+        top: 90px;
+        left: 5px;
+        padding: 2px;
+        border-radius: 15px;
+       text-align: center;
+        opacity: 0.5;
+    }
+    .user-text-p{
+        margin-bottom: 0rem;
+        font-size: 12px;
+    }
+    .user-h3{
+        font-size: 12px;
+    }
+ }
+ @media (max-width: 334px) { 
+    .work-card::after{
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+    }
+    .subscribe{
+        font-size: 13px;
+        padding: 5px;
+    }
+ }
